@@ -8,14 +8,152 @@
 
 /* Begin PBXFileReference section */
 		946D166B1861FADF00229964 /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		946D166C1861FD7E00229964 /* arete.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arete.c; sourceTree = "<group>"; };
+		946D166D1861FD7E00229964 /* arete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arete.h; sourceTree = "<group>"; };
+		946D166E1861FD7E00229964 /* cellule.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cellule.c; sourceTree = "<group>"; };
+		946D166F1861FD7E00229964 /* cellule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellule.h; sourceTree = "<group>"; };
+		946D16701861FD7E00229964 /* file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = file.c; sourceTree = "<group>"; };
+		946D16711861FD7E00229964 /* file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file.h; sourceTree = "<group>"; };
+		946D16721861FD7E00229964 /* graphe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = graphe.c; sourceTree = "<group>"; };
+		946D16731861FD7E00229964 /* graphe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = graphe.h; sourceTree = "<group>"; };
+		946D16741861FD7E00229964 /* listeAdj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = listeAdj.c; sourceTree = "<group>"; };
+		946D16751861FD7E00229964 /* listeAdj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listeAdj.h; sourceTree = "<group>"; };
+		946D16761861FD7E00229964 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		946D16771861FD7E00229964 /* outilsGraphe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = outilsGraphe.c; sourceTree = "<group>"; };
+		946D16781861FD7E00229964 /* outilsGraphe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = outilsGraphe.h; sourceTree = "<group>"; };
+		946D16791861FD7E00229964 /* outilsListeAdj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = outilsListeAdj.c; sourceTree = "<group>"; };
+		946D167A1861FD7E00229964 /* outilsListeAdj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = outilsListeAdj.h; sourceTree = "<group>"; };
+		946D167B1861FD7E00229964 /* sommet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sommet.c; sourceTree = "<group>"; };
+		946D167C1861FD7E00229964 /* sommet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sommet.h; sourceTree = "<group>"; };
+		946D16851861FE5400229964 /* tri.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tri.c; sourceTree = "<group>"; };
+		946D16861861FE5400229964 /* tri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tri.h; sourceTree = "<group>"; };
+		946D16881861FFE800229964 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		946D169A1862052000229964 /* dijkstra.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dijkstra.c; sourceTree = "<group>"; };
+		946D169C1862058E00229964 /* bellmanford.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bellmanford.c; sourceTree = "<group>"; };
+		946D169D1862059E00229964 /* bellmanford.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bellmanford.h; sourceTree = "<group>"; };
+		946D169E1862080A00229964 /* dijkstra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dijkstra.h; sourceTree = "<group>"; };
+		946D169F186208FC00229964 /* graphe3.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = graphe3.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		946D16601861FAB500229964 = {
 			isa = PBXGroup;
 			children = (
+				946D1699186204FD00229964 /* Bellman-Ford */,
+				946D1698186204F400229964 /* Dijkstra */,
+				946D16871861FE5800229964 /* Tri */,
+				946D167E1861FD9E00229964 /* Cellule */,
+				946D167D1861FD8700229964 /* Arrete */,
+				946D167F1861FDA800229964 /* File */,
+				946D16801861FDAF00229964 /* Graphe */,
+				946D16811861FDBA00229964 /* Liste Adjacence */,
+				946D16821861FDC400229964 /* Outils Graphes */,
+				946D16831861FDD100229964 /* Outils Liste Adjacence */,
+				946D16841861FDE000229964 /* Sommet */,
 				946D166B1861FADF00229964 /* makefile */,
+				946D16881861FFE800229964 /* .gitignore */,
+				946D169F186208FC00229964 /* graphe3.txt */,
+				946D16761861FD7E00229964 /* main.c */,
 			);
+			sourceTree = "<group>";
+		};
+		946D167D1861FD8700229964 /* Arrete */ = {
+			isa = PBXGroup;
+			children = (
+				946D166C1861FD7E00229964 /* arete.c */,
+				946D166D1861FD7E00229964 /* arete.h */,
+			);
+			name = Arrete;
+			sourceTree = "<group>";
+		};
+		946D167E1861FD9E00229964 /* Cellule */ = {
+			isa = PBXGroup;
+			children = (
+				946D166E1861FD7E00229964 /* cellule.c */,
+				946D166F1861FD7E00229964 /* cellule.h */,
+			);
+			name = Cellule;
+			sourceTree = "<group>";
+		};
+		946D167F1861FDA800229964 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				946D16701861FD7E00229964 /* file.c */,
+				946D16711861FD7E00229964 /* file.h */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+		946D16801861FDAF00229964 /* Graphe */ = {
+			isa = PBXGroup;
+			children = (
+				946D16721861FD7E00229964 /* graphe.c */,
+				946D16731861FD7E00229964 /* graphe.h */,
+			);
+			name = Graphe;
+			sourceTree = "<group>";
+		};
+		946D16811861FDBA00229964 /* Liste Adjacence */ = {
+			isa = PBXGroup;
+			children = (
+				946D16741861FD7E00229964 /* listeAdj.c */,
+				946D16751861FD7E00229964 /* listeAdj.h */,
+			);
+			name = "Liste Adjacence";
+			sourceTree = "<group>";
+		};
+		946D16821861FDC400229964 /* Outils Graphes */ = {
+			isa = PBXGroup;
+			children = (
+				946D16771861FD7E00229964 /* outilsGraphe.c */,
+				946D16781861FD7E00229964 /* outilsGraphe.h */,
+			);
+			name = "Outils Graphes";
+			sourceTree = "<group>";
+		};
+		946D16831861FDD100229964 /* Outils Liste Adjacence */ = {
+			isa = PBXGroup;
+			children = (
+				946D16791861FD7E00229964 /* outilsListeAdj.c */,
+				946D167A1861FD7E00229964 /* outilsListeAdj.h */,
+			);
+			name = "Outils Liste Adjacence";
+			sourceTree = "<group>";
+		};
+		946D16841861FDE000229964 /* Sommet */ = {
+			isa = PBXGroup;
+			children = (
+				946D167B1861FD7E00229964 /* sommet.c */,
+				946D167C1861FD7E00229964 /* sommet.h */,
+			);
+			name = Sommet;
+			sourceTree = "<group>";
+		};
+		946D16871861FE5800229964 /* Tri */ = {
+			isa = PBXGroup;
+			children = (
+				946D16851861FE5400229964 /* tri.c */,
+				946D16861861FE5400229964 /* tri.h */,
+			);
+			name = Tri;
+			sourceTree = "<group>";
+		};
+		946D1698186204F400229964 /* Dijkstra */ = {
+			isa = PBXGroup;
+			children = (
+				946D169A1862052000229964 /* dijkstra.c */,
+				946D169E1862080A00229964 /* dijkstra.h */,
+			);
+			name = Dijkstra;
+			sourceTree = "<group>";
+		};
+		946D1699186204FD00229964 /* Bellman-Ford */ = {
+			isa = PBXGroup;
+			children = (
+				946D169C1862058E00229964 /* bellmanford.c */,
+				946D169D1862059E00229964 /* bellmanford.h */,
+			);
+			name = "Bellman-Ford";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -28,6 +166,7 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = AlgoTP7;
@@ -51,6 +190,7 @@
 				en,
 			);
 			mainGroup = 946D16601861FAB500229964;
+			productRefGroup = 946D16601861FAB500229964;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -168,6 +308,7 @@
 				946D166A1861FAB500229964 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
