@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "bellmanford.h"
+#include "outilsGraphe.h"
+#include "outilsListeAdj.h"
+#include "tri.h"
+
 
 void souce_Initialisation(Graphe* g, Sommet* s)
 {
@@ -16,7 +20,7 @@ void souce_Initialisation(Graphe* g, Sommet* s)
 }
 
 void relacherArete(Sommet* u, Sommet* v, int poids){
-	if(v->distance > (u->distance + poids)){
+	if(u->distance + poids < v->distance){
 		v->distance = u->distance + poids;
 		v->pere=u;
 	}
@@ -31,29 +35,25 @@ int Bellman_Ford(Graphe* g, Sommet* s)
 	int* tabAreteIndY = NULL;
 	int* tabAreteVal = NULL;
     
-	k=0;
-	for(i=0;i<g->nbrSommet;i++){
-		for(j=0;j<g->nbrSommet;j++){
-			if(g->tabAretes[i][j].poids != 0){
-				k++;
-			}
-            
-		}
+	k= 0;
+	for(i=0; i<compterAretes(g);i++){
+        if (g->tabAretes[i]->poids != 0)
+            k++;
 	}
+    
 	tabAreteIndX = malloc(sizeof(int) * k);
 	tabAreteIndY = malloc(sizeof(int) * k);
 	tabAreteVal = malloc(sizeof(int) * k);
     
 	l=0;
-	for(i=0;i<g->nbrSommet;i++){
-		for(j=0;j<g->nbrSommet;j++){
-			if(g->tabAretes[i][j].poids !=0 ){
-				tabAreteIndX[l]=i;
-				tabAreteIndY[l]=j;
-				tabAreteVal[l]= g->tabAretes[i][j].poids;
+	for(i=0;i<compterAretes(g);i++){
+			if(g->tabAretes[i]->poids !=0 )
+            {
+				tabAreteIndX[l]= g->tabAretes[i]->u->cle;
+				tabAreteIndY[l]= g->tabAretes[i]->v->cle;
+				tabAreteVal[l]= g->tabAretes[i]->poids;
 				l++;
 			}
-		}
 	}
     
     /* Initialisation */
