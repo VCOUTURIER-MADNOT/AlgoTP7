@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "graphe.h"
-#include <stdbool.h>
-#include "file.h"
-#include "outilsGraphe.h"
+#include "bellmanford.h"
 
 int main(){
 	
     Graphe* graphe = creerGraphe("graphe3.txt");
     
-    afficherListesAdjacences(graphe);
-    afficherMatriceAdjacences(graphe);
+    Bellman_Ford(graphe, graphe->tabSommet[0]);
+    
+    afficherBellman_Ford(graphe, 0);
     
     return 0;
 }
